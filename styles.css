@@ -4,14 +4,16 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-image: url('https://alittlemoreenglish.weebly.com/uploads/2/6/6/3/26638990/untitled-design-3_orig.png');
+  background-image: url('https://alittlemoreenglish.weebly.com/uploads/2/6/6/3/26638990/gradient-background-soft-colors_orig.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
+  overflow: hidden;
 }
 
 .exam-timer-container {
+  position: absolute;
   display: flex;
   width: 80%;
   max-width: 800px;
@@ -19,7 +21,23 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   padding: 20px;
+  cursor: move;
+  transform-origin: center;
+  user-select: none;
 }
+
+.resize-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #666;
+  border-radius: 50%;
+  cursor: se-resize;
+  right: -10px;
+  bottom: -10px;
+  z-index: 1000;
+}
+
 
 .left-section {
   flex: 1;
