@@ -183,3 +183,9 @@ class ExamTimer {
 document.addEventListener('DOMContentLoaded', () => {
   const examTimer = new ExamTimer();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const examTimer = new ExamTimer();
+  const container = document.querySelector('.exam-timer-container');
+  const draggable = new DraggableContainer(container);
+});
